@@ -37,13 +37,13 @@ function onSwitchControlClik() {
     };
  
 }
-
+// localStorage.removeItem('bodyClasses');
 function themeChange() {
  
   if (bodyClassSelected === Theme.DARK) {
     switchCheck.checked = true;
     document.body.className = bodyClassSelected;
   }
-  else {document.body.className = bodyClassSelected};
+  else {document.body.className = Theme.LIGHT};
 };
 
